@@ -1,3 +1,8 @@
+/*
+    Source of learning:
+    https://www.geeksforgeeks.org/program-for-point-of-intersection-of-two-lines/
+*/
+
 #include <iostream>
 #include <ostream>
 using namespace std;
