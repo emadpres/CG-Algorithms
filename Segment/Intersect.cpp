@@ -71,12 +71,14 @@ bool Intersect(Point p1, Point q1, Point p2, Point q2)
     int o3 = GetOriention(p2,q2,p1);
     int o4 = GetOriention(p2,q2,q1);
     
-    if (o1!=o2 && o1*o2!=0 && o3!=o4 && o3*o4!=0) return true;
-    if (o1==0 && OnSegment(p1,q1,p2)) return true;
-    if (o2==0 && OnSegment(p1,q1,q2)) return true;
-    if (o3==0 && OnSegment(p2,q2,p1)) return true;
-    if (o4==0 && OnSegment(p2,q2,q1)) return true;
-    return false;
+    if (o1!=o2 && o3!=o4)				return true;
+	
+    if (o1==0 && OnSegment(p1,q1,p2))	return true;
+    if (o2==0 && OnSegment(p1,q1,q2))	return true;
+    if (o3==0 && OnSegment(p2,q2,p1))	return true;
+    if (o4==0 && OnSegment(p2,q2,q1))	return true;
+
+	return false;
 }
 
 
