@@ -1,6 +1,7 @@
 /*
     Source of learning:
-    https://www.geeksforgeeks.org/convex-hull-set-2-graham-scan/
+    1. https://www.youtube.com/watch?v=Ps1idzOx6LA
+    2. https://www.geeksforgeeks.org/convex-hull-set-2-graham-scan/
     --------------------------
     Complexity:  O( n*lg(n) )
  */
