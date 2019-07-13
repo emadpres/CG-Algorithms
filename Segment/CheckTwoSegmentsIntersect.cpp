@@ -27,8 +27,8 @@ istream& operator >>(istream & in, Point& p)
 
 
 /*
-    Return the oriention of three points
-    0 -> Colinear
+    Return the orientation of three points
+    0 -> Collinear
     1 -> CW
     2 -> CCW
 */
@@ -39,7 +39,7 @@ int GetOriention(Point a, Point b, Point c)
     double dy2 = c.y-b.y;
     double dx2 = c.x-b.x;
     
-    // if you computes m1,m2 indivually you have to handle dx=0
+    // if you computes m1,m2 individually you have to handle dx=0
     double v = dy1*dx2 - dy2 *dx1;
     
     if(v==0) return 0;
